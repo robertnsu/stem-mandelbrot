@@ -225,7 +225,7 @@ class MandelbrotCanvas {
             }
 
             if (!this.colorTable || this.colorTable.length !== maxIterations + 1) {
-                this.colorTable = this.Uint32Array(maxIterations + 1);
+                this.colorTable = new Uint32Array(maxIterations + 1);
             }
 
             if (min === max) {
